@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pico.css starter page</title>
+    <meta name="description" content="Just a pure semantic HTML markup, without .classes.  Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/classless/">
+
+    <!-- Pico.css (Classless version) -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"> -->
+
+    <!-- Pico.css all-in-one version CDN -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+
+    <!-- Pico + Bootstrap grid system -->
+    <link rel="stylesheet" href="assets/css/pico-bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body class="container">
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><strong>Brand</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li>
+                    <details role="list" dir="rtl">
+                        <summary aria-haspopup="listbox" role="link">Dropdown</summary>
+                        <ul role="listbox">
+                            <li><a>Action</a></li>
+                            <li><a>Another action</a></li>
+                            <li><a>Something else here</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details role="list">
+                        <summary aria-haspopup="listbox" role="button">Theme</summary>
+                        <ul role="listbox">
+                            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                            <li><a href="#" data-theme-switcher="light">Light</a></li>
+                            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- ./ Header -->
+
+    <!-- Main -->
+    <main>
+
+        <div class="grid">
+            <article class="image-card">
+                <header>
+                    <img src="assets/images/placeholder-300x150.svg" alt="">
+                </header>
+                Body
+                <footer>Footer</footer>
+            </article>
+            <article>
+                <header>Card 1</header>
+                Body
+            </article>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <article>sidebar</article>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <article>
+                        <img src="assets/images/placeholder-300x150.svg" alt="" width="auto" height="150">
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </main><!-- ./ Main -->
+
+    <!-- Subscribe -->
+    <section aria-label="Subscribe">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Subscribe</h2>
+                    <h3>Litora torquent per conubia nostra</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name"
+                        required>
+                    <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address"
+                        required>
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section><!-- ./ Subscribe -->
+
+
+    <!-- Footer -->
+    <footer>
+        <small>Copyright <script>
+                document.write(new Date().getFullYear());
+            </script> &copy;</small>
+    </footer><!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="assets/js/minimal-theme-switcher.js"></script>
+
+
+</body>
+
+</html>
